@@ -1,0 +1,7 @@
+Package %{scl_name} provides Vagrant delivered as a Software
+Collection. For more information about Software Collections,
+see the scl(1) man page. By installing the %{scl_name} collection,
+you will get the minimum working set of packages to have a working
+Vagrant with libvirt support.
+
+Usage: scl enable %{scl}
