@@ -10,7 +10,7 @@
 %{!?scl_ruby:%global scl_ruby rh-ruby22}
 %{!?scl_prefix_ruby:%global scl_prefix_ruby %{scl_ruby}-}
 
-%{!?scl_ror:%global scl_ror rh-ror41}
+%{!?scl_ror:%global scl_ror rh-ror42}
 %{!?scl_prefix_ror:%global scl_prefix_ror %{scl_ror}-}
 
 # Do not produce empty debuginfo package.
@@ -21,7 +21,7 @@
 Summary: Package that installs %scl
 Name: %scl_name
 Version: 2.1
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: GPLv2+
 Source0: README
 Source1: LICENSE
@@ -140,6 +140,9 @@ EOF
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Thu May 05 2016 Tomas Hrcka <thrcka@redhat.com> - 2.1-3
+- Update rh-ror41 to rh-ror42
+
 * Wed Sep 02 2015 Josef Stribny <jstribny@redhat.com> - 2.1-2
 - Change prefix to sclo-
 
