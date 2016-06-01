@@ -21,7 +21,7 @@
 Summary: Package that installs %scl
 Name: %scl_name
 Version: 2.1
-Release: 3%{?dist}
+Release: 5%{?dist}
 License: GPLv2+
 Source0: README
 Source1: LICENSE
@@ -140,8 +140,11 @@ EOF
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Wed Jun 01 2016 Tomas Hrcka <thrcka@redhat.com> - 2.1.5
+- Install collection with meta-package
+
 * Thu May 05 2016 Tomas Hrcka <thrcka@redhat.com> - 2.1-3
-- rebuilt
+- Update rh-ror41 to rh-ror42
 
 * Wed Sep 02 2015 Josef Stribny <jstribny@redhat.com> - 2.1-2
 - Change prefix to sclo-
