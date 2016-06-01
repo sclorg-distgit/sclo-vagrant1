@@ -16,12 +16,12 @@
 # Do not produce empty debuginfo package.
 %global debug_package %{nil}
 
-%global install_scl 1
+%global install_scl 0
 
 Summary: Package that installs %scl
 Name: %scl_name
 Version: 2.1
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPLv2+
 Source0: README
 Source1: LICENSE
@@ -140,7 +140,7 @@ EOF
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
-* Thu May 05 2016 Tomas Hrcka <thrcka@redhat.com> - 2.1-3
+* Thu May 05 2016 Tomas Hrcka <thrcka@redhat.com> - 2.1-4
 - Update rh-ror41 to rh-ror42
 
 * Wed Sep 02 2015 Josef Stribny <jstribny@redhat.com> - 2.1-2
