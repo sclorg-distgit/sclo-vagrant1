@@ -16,12 +16,12 @@
 # Do not produce empty debuginfo package.
 %global debug_package %{nil}
 
-%global install_scl 0
+%global install_scl 1
 
 Summary: Package that installs %scl
 Name: %scl_name
 Version: 2.1
-Release: 5%{?dist}
+Release: 6%{?dist}
 License: GPLv2+
 Source0: README
 Source1: LICENSE
@@ -140,6 +140,9 @@ EOF
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
+* Mon Jun 13 2016 Pavel Valena <pvalena@redhat.com> - 2.1-6
+- Install SCL with meta-package
+
 * Wed Jun 01 2016 Tomas Hrcka <thrcka@redhat.com> - 2.1.5
 - Install collection with meta-package
 
